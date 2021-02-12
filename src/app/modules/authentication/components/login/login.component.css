@@ -1,0 +1,25 @@
+.login-card {
+    width: 30%;
+    margin: auto;
+    margin-top: 10%;
+    background-color: black;
+}
+
+.input-form {
+    border-bottom: 1px solid grey;
+}
+
+.input-form > input{
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    height: 3rem;
+    font-size: 20px;
+    border:none;
+    width:100%;
+    outline: none
+}
+
+.input-form > label {
+    color: red;
+}
