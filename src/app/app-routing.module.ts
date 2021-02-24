@@ -7,7 +7,7 @@ const routes: Routes = [
     },
     {
         path: 'home',
-        loadChildren: () => import('src/app/modules/authentication/authentication.module').then(m => m.AuthenticationModule)
+        loadChildren: () => import('src/app/modules/home/Home.module').then(m => m.HomeModule)
     },
     {   
         path: '**', 
