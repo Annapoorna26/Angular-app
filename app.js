@@ -4,6 +4,7 @@ var http = require('http');
 
 var indexRouter = require('./server/routes/index');
 var usersRouter = require('./server/routes/users');
+var authRouter = require('./server/routes/auth');
 
 var app = express();
 
@@ -13,7 +14,7 @@ app.use(express.static(path.join(__dirname, './dist/my-app')));
 app.get('/', function (req,res) {
   res.sendFile('./dist/my-app/index.html', { root: __dirname });
 });
-app.use('/', indexRouter);
+app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
