@@ -7,6 +7,7 @@ import { AuthenticationRoutingModule } from './authentication.routing';
 
 import { DefaultAuthPageComponent } from './default-auth-page/default-auth-page.component';
 import { RegisterComponent } from './components/register/register.component';
+
 @NgModule({
   declarations: [LoginComponent, DefaultAuthPageComponent, RegisterComponent],
   imports: [
