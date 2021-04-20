@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/theming';
 
 body, html {
     margin: 0px;
@@ -8,3 +8,28 @@ body, html {
     position: absolute;
     bottom: 0;
 }
+@include mat-core();
+
+$my-colors: (
+    500: #F9A825,
+    600:#E53935,
+    700:#FF8F00,
+
+    contrast:(
+        500:black,
+        600:black,
+        700:black
+        )
+    );
+// Define the default theme (same as the example above).
+$my-primary: mat-palette($my-colors,500);
+$my-accent:  mat-palette($my-colors,700);
+$my-warn:  mat-palette($my-colors,600);
+$my-theme:   mat-light-theme((
+  color: (
+    primary: $my-primary,
+    accent:  $my-accent,
+    warn:    $my-warn
+  )
+));
+@include angular-material-theme($my-theme);

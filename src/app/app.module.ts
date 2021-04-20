@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './common-components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './common-components/footer/footer.component';
-
 @NgModule({
   declarations: [
     AppComponent,
