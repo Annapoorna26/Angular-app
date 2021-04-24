@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class DefaultAuthPageComponent implements OnInit {
 
   constructor() { }
-  
+  showComp = 'login';
   ngOnInit(): void {
+  }
+
+  showComponent(event) {
+    this.showComp = event;
   }
 
 }

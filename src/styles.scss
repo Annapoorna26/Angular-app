@@ -3,6 +3,11 @@
 
 body, html {
     margin: 0px;
+    // background-image:  url('../src/assets/images/background_image.jpg');
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
+    background-color: #f1eee9;
 }
 .footer {
     position: absolute;
@@ -33,3 +38,9 @@ $my-theme:   mat-light-theme((
   )
 ));
 @include angular-material-theme($my-theme);
+
+.cls-btn {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+}

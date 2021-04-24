@@ -1,1 +1,2 @@
-<p>default-auth-page works!</p>
+<app-login *ngIf="showComp == 'login'" (showInParent)="showComponent($event)"></app-login>
+<app-register *ngIf="showComp == 'signup'"  (showInParent)="showComponent($event)"></app-register>

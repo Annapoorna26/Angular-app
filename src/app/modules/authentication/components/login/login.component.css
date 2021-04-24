@@ -1,25 +1,29 @@
 .login-card {
-    width: 30%;
+    width: 25%;
     margin: auto;
     margin-top: 10%;
-    background-color: black;
+    border-radius: 5%;
 }
-
-.input-form {
-    border-bottom: 1px solid grey;
+.login-header {
+    align-items: center;
 }
 
 .input-form > input{
-    background-color: black;
-    color: white;
-    opacity: 0.5;
-    height: 3rem;
-    font-size: 20px;
+    padding-top:3%;
+    padding-left:2%;
+    padding-bottom:3%;
     border:none;
-    width:100%;
-    outline: none
+    width:98%;
+    outline: none;
+    background-color: #f3ebdf;
+    font-size: 1rem;
+    border-radius: 2%;
+    border:1px solid #f0b864;
 }
-
-.input-form > label {
-    color: red;
+.login-sub-links {
+    display: flex;
+    justify-content: space-between;
+}
+.remember:checked {
+    background-color: #f0b864;
 }

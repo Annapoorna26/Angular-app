@@ -1,5 +1,6 @@
 <mat-card class="login-card" fxLayout="column" fxLayoutAlign="space-between stretch" >
-<div class="input-form">
+<h2 class="login-header">Login</h2>
+  <div class="input-form">
    <label>Email</label>
    <input placeholder="abc@xyz.com">
 </div>
@@ -9,5 +10,14 @@
   <input type="password" placeholder="********">
 </div>
 <br>
-<button mat-raised-button routerLink="/" (click)="login()">Login</button>
+<button mat-raised-button color="primary" class="cls-btn login-btn" routerLink="/" (click)="login()">Login</button>
+<br>
+<br>
+<button mat-raised-button color="primary" class="cls-btn signup-btn" routerLink="/" (click)="signup()">Sign Up</button>
+<br>
+<br>
+<div class="login-sub-links">
+  <span><a href="">forgot password?</a></span>
+  <span><input type="checkbox" class="remember"> remember me</span>
+</div>
 </mat-card>

@@ -1,1 +1,30 @@
-<p>register works!</p>
+<mat-card class="login-card" fxLayout="column" fxLayoutAlign="space-between stretch" >
+    <h2 class="login-header">Sign Up</h2>
+      <div class="input-form">
+       <label>User Name</label>
+       <input type="text" placeholder="john doe">
+    </div>
+    <br>
+    <div class="input-form">
+      <label>Email id</label>
+      <input type="email" placeholder="john.doe@gmail.com">
+    </div>
+    <br>
+    <div class="input-form">
+        <label>Password</label>
+        <input type="password" placeholder="****************">
+    </div>
+      <br>
+    <div class="input-form">
+        <label>Confirm password</label>
+        <input type="password" placeholder="****************">
+    </div>
+      <br>
+      <button mat-raised-button color="primary" class="cls-btn signup-btn" routerLink="/" (click)="signup()">Sign Up</button>
+    <br>
+    <br>
+    <button mat-raised-button color="primary" class="cls-btn login-btn" routerLink="/" (click)="login()">Login</button>
+    <br>
+    <br>
+    </mat-card>
+    

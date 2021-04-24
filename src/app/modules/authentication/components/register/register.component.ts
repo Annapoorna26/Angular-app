@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  EventEmitter, Output } from '@angular/core';
+import { LoginService } from 'src/app/services/login-service/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private loginservice: LoginService,
+              private router: Router) { }
+  @Output() showInParent = new EventEmitter();
   ngOnInit(): void {
+  }
+
+  login() {
+    this.showInParent.emit('login');
+  }
+
+  signup() {
+      this.loginservice.login().subscribe( result => {
+        this.router.navigate(['/login']);
+      })  
   }
 
 }

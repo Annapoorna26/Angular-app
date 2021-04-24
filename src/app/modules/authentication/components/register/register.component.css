@@ -1,0 +1,28 @@
+.login-card {
+    width: 25%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 5%;
+}
+.login-header {
+    align-items: center;
+}
+.input-form > input{
+    padding-top:3%;
+    padding-left:2%;
+    padding-bottom:3%;
+    border:none;
+    width:98%;
+    outline: none;
+    background-color: #f3ebdf;
+    font-size: 1rem;
+    border-radius: 2%;
+    border:1px solid #f0b864;
+}
+.login-sub-links {
+    display: flex;
+    justify-content: space-between;
+}
+.remember:checked {
+    background-color: #f0b864;
+}
